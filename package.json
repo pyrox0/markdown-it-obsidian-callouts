@@ -1,12 +1,12 @@
 {
-  "name": "markdown-it-obsidian-callouts",
-  "version": "0.3.2",
-  "description": "Support Obsidian callouts and admonitions",
+  "name": "markdown-it-obsidian-callouts-lite",
+  "version": "0.4.0",
+  "description": "Support Obsidian callouts and admonitions - Lite version",
   "author": "Erin Schnabel <ebullientworks@gmail.com>",
   "funding": "https://www.buymeacoffee.com/ebullient",
   "license": "Apache-2.0",
-  "bugs": "https://github.com/ebullient/markdown-it-obsidian-callouts/issues",
-  "homepage": "https://github.com/ebullient/markdown-it-obsidian-callouts#readme",
+  "bugs": "https://github.com/pyrox0/markdown-it-obsidian-callouts/issues",
+  "homepage": "https://github.com/pyrox0/markdown-it-obsidian-callouts#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebullient/markdown-it-obsidian-callouts.git"

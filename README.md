@@ -14,6 +14,9 @@ It uses Obsidian default icons and callout flavors out of the gate.
 > by taking advantage of CSS instead of multiple HTML elements to display things properly.
 > Only use this if you know that you would want this. However, this fork does try to keep its
 > output as close as possible to the original design of obsidian's callouts.
+> 
+> As a final note, this fork aims to have its markup validate properly with [HTML-Validate](https://html-validate.org)
+> as the author uses it for her personal site.
 
 ## Usage
 
