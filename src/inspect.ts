@@ -126,19 +126,12 @@ export function renderCalloutPrefix(
 ): string {
     const callout = token.attrGet("data-callout");
     const fold = token.attrGet("data-callout-fold");
+    const foldClass = fold ? "" : "no-fold";
     // deno-fmt-ignore
-    if (callout && fold) {
+    if (callout) {
         return `
-<details class="callout" data-callout="${callout}" ${fold === "+" ? " open" : ""}>
-    <summary class="callout-title">
-        ${getTitle(token, md)}
-    </summary>
-    <div class="callout-content">`;
-        // biome-ignore lint/style/noUselessElse: callout can be false
-    } else if (callout) {
-        return `
-<details class="callout no-fold" open data-callout="${callout}">
-    <summary class="callout-title no-fold">
+<details class="callout ${foldClass}" open data-callout="${callout}">
+    <summary class="callout-title ${foldClass}">
         ${getTitle(token, md)}
     </summary>
     <div class="callout-content">`;
@@ -151,12 +144,8 @@ export function renderCalloutPostfix(
     options: MdItObsidianCalloutsOptions = {},
 ): string {
     const callout = token.attrGet("data-callout");
-    const fold = token.attrGet("data-callout-fold");
-    if (callout && fold) {
+    if (callout) {
         return "</div></details>";
-        // biome-ignore lint/style/noUselessElse: callout can be false
-    } else if (callout) {
-        return "</div></div>";
     }
     return "";
 }
